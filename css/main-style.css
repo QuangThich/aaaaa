@@ -1,0 +1,126 @@
+@charset "utf-8";
+html{scroll-behavior: smooth}
+/* CSS Document */
+body{ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; }
+h1{}
+h2{}
+h3{ font-weight: 400}
+.btn-primary{
+	background: tomato; 
+	padding: 5px 10px; 
+	text-decoration: none;
+	color: #fff; 
+	border-radius: 10px}
+.btn-primary:hover{ background: #c00}
+footer{ background: #eee}
+.footer-menu a{ display: block; text-decoration: none; color: #666; margin: 15px }
+.footer-menu a:hover{ color: #000}
+.bg-primary{ background: #2b4353}
+section{ padding: 120px 0}
+/*----------------------------begin menu-----------------------------------------*/
+header{ position: fixed; width: 100%; left: 0; top: 0; z-index: 99999}
+header a.logo
+{
+	color: #233142; text-decoration: none; text-align: center; 
+	display: block; padding: 10px; font-size: 3vw;
+	box-shadow: 0 2px 5px #2b4353;
+	background-color: #ececec;
+}
+header nav{ background-color: #ececec; position: relative}
+header .navbar-toggle{ 
+position: absolute; right: 10%; top:-35px; border: none; font-size: 1.2rem; cursor: pointer;
+background-color: #ececec; color: #233142}
+header nav ul
+{
+	margin: 0; padding: 0; list-style: none
+}
+header nav ul li{ position: relative; border-bottom: 1px solid}
+header nav ul li a{ text-align: center; display: block; padding: 10px 0;
+color: #333; text-decoration: none}
+header nav ul li a:hover{ background: #233142; color: #fff}
+header nav .menu{ display: none}
+@media (min-width:1000px)
+{
+	header nav ul{ display: flex; justify-content: center}
+	header nav ul li{ border: none}
+	header nav ul li a{ padding: 10px 25px}
+	header .navbar-toggle{ display: none; }
+	header nav .menu{ display: block}
+}
+#skill{ background: #9fd3c7}
+#timeline{ background-color: #385170}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ececec;
+  background-color: #9fd3c7;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.ab-anh{ overflow: hidden;
+position:absolute;	width: 90%;left: 5%; top: 5%;
+	height: 90%;}
+.ab-anh .overlay-caption
+{
+	width:100%;
+	height: 100%;
+	background: rgba(76,109,148,.5);
+	position: absolute; left: 0%; top: 0%;
+	text-align: center; padding-top: 30px;
+	opacity: 0;
+	transition: all 1s;
+	transform: scale(0) rotate(-180deg)
+}
+.ab-anh:hover >.overlay-caption{ opacity: 1; transform:scale(1) rotate(0)}
+
+
+/*---------- hieu ung lat flip Y -----------*/
+
+
+
+#skill img{ width: 120px; height:120px ;display: block; margin: auto}
+.ab{
+	padding: 6px 30px;
+    text-decoration: none;
+    color: #272343;
+    background-color: #ececec;
+    border-radius: 20px;
+	text-align: center;
+}
+#timeline{
+	color: #ececec;
+}
+#contact{
+	color: #ececec;
+}
+
